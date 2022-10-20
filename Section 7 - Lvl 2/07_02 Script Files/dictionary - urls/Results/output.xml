@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161119 17:11:58.997" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\development\robot-scripts\dictionary - urls\tests\IMB_Tests.robot" id="s1" name="IMB Tests">
+<test id="s1-t1" name="Should be able to view landing page">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20161119 17:11:59.179" starttime="20161119 17:11:59.178"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161119 17:11:59.179" level="INFO">Opening browser 'ie' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20161119 17:12:00.684" starttime="20161119 17:11:59.179"></status>
+</kw>
+<status status="PASS" endtime="20161119 17:12:00.684" starttime="20161119 17:11:59.178"></status>
+</kw>
+<kw name="Navigate to Landing Page" library="ImbApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL.${ENVIRONMENT}}</arg>
+</arguments>
+<msg timestamp="20161119 17:12:00.686" level="INFO">Opening url 'http://dev.internetmillionaireblueprint.com'</msg>
+<status status="PASS" endtime="20161119 17:12:05.343" starttime="20161119 17:12:00.686"></status>
+</kw>
+<status status="PASS" endtime="20161119 17:12:05.344" starttime="20161119 17:12:00.685"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Landing">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20161119 17:12:05.397" starttime="20161119 17:12:05.344"></status>
+</kw>
+<status status="PASS" endtime="20161119 17:12:05.398" starttime="20161119 17:12:05.344"></status>
+</kw>
+<status status="PASS" endtime="20161119 17:12:05.398" starttime="20161119 17:12:00.684"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161119 17:12:10.398" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161119 17:12:10.398" starttime="20161119 17:12:05.398"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161119 17:12:14.418" starttime="20161119 17:12:10.399"></status>
+</kw>
+<status status="PASS" endtime="20161119 17:12:14.418" starttime="20161119 17:12:10.399"></status>
+</kw>
+<tags>
+<tag>landing</tag>
+</tags>
+<status status="PASS" endtime="20161119 17:12:14.419" critical="yes" starttime="20161119 17:11:59.177"></status>
+</test>
+<status status="PASS" endtime="20161119 17:12:14.424" starttime="20161119 17:11:59.001"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">landing</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="IMB Tests" pass="1">IMB Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161113 14:21:47.634" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\development\robot-scripts\amz-skeleton\tests\IMB_Tests.robot" id="s1" name="IMB Tests">
+<test id="s1-t1" name="Should be able to view landing page">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20161113 14:21:47.825" starttime="20161113 14:21:47.825"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 14:21:47.826" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20161113 14:21:53.875" starttime="20161113 14:21:47.826"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:21:53.875" starttime="20161113 14:21:47.824"></status>
+</kw>
+<kw name="Navigate to Landing Page" library="ImbApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL.${ENVIRONMENT}}</arg>
+</arguments>
+<msg timestamp="20161113 14:21:53.878" level="INFO">Opening url 'http://qa.internetmillionaireblueprint.com'</msg>
+<status status="PASS" endtime="20161113 14:21:57.261" starttime="20161113 14:21:53.877"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:21:57.262" starttime="20161113 14:21:53.877"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Landing">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 14:21:57.286" starttime="20161113 14:21:57.265"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:21:57.287" starttime="20161113 14:21:57.264"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:21:57.287" starttime="20161113 14:21:53.876"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161113 14:22:02.288" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161113 14:22:02.289" starttime="20161113 14:21:57.287"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161113 14:22:02.717" starttime="20161113 14:22:02.308"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:02.718" starttime="20161113 14:22:02.307"></status>
+</kw>
+<tags>
+<tag>landing</tag>
+</tags>
+<status status="PASS" endtime="20161113 14:22:02.718" critical="yes" starttime="20161113 14:21:47.823"></status>
+</test>
+<test id="s1-t2" name="Should be able to register for new account">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20161113 14:22:02.721" starttime="20161113 14:22:02.721"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:02.722" level="INFO">Opening browser 'ff' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20161113 14:22:08.747" starttime="20161113 14:22:02.722"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:08.748" starttime="20161113 14:22:02.721"></status>
+</kw>
+<kw name="Navigate to Landing Page" library="ImbApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL.${ENVIRONMENT}}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:08.750" level="INFO">Opening url 'http://qa.internetmillionaireblueprint.com'</msg>
+<status status="PASS" endtime="20161113 14:22:10.621" starttime="20161113 14:22:08.750"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:10.621" starttime="20161113 14:22:08.749"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Landing">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_TEXT}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 14:22:10.654" starttime="20161113 14:22:10.622"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:10.654" starttime="20161113 14:22:10.622"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:10.654" starttime="20161113 14:22:08.748"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161113 14:22:15.655" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161113 14:22:15.655" starttime="20161113 14:22:10.655"></status>
+</kw>
+<kw name="Create New Account" library="ImbApp">
+<arguments>
+<arg>${CUSTOMER_USER}</arg>
+</arguments>
+<kw name="Click Registration Link" library="TopNav">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${TOPNAV_REGISTER_LINK}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:15.657" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" endtime="20161113 14:22:15.723" starttime="20161113 14:22:15.657"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:15.723" starttime="20161113 14:22:15.656"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Register">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${REGISTER_EMAIL_INPUT}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 14:22:16.155" starttime="20161113 14:22:15.724"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:16.155" starttime="20161113 14:22:15.723"></status>
+</kw>
+<kw name="Fill Page and Submit" library="Register">
+<arguments>
+<arg>${UserData}</arg>
+</arguments>
+<kw name="Fill Email" library="Register">
+<arguments>
+<arg>${UserData.Email}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_EMAIL_INPUT}</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:16.158" level="INFO">Typing text 'bryan@robotframework.com' into text field 'id=MainContent_Email'</msg>
+<status status="PASS" endtime="20161113 14:22:16.360" starttime="20161113 14:22:16.157"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:16.360" starttime="20161113 14:22:16.156"></status>
+</kw>
+<kw name="Fill Password" library="Register">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_PASSWORD1_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:16.363" level="INFO">Typing text 'MyPassword!' into text field 'id=MainContent_Password'</msg>
+<status status="PASS" endtime="20161113 14:22:20.899" starttime="20161113 14:22:16.362"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:20.900" starttime="20161113 14:22:16.361"></status>
+</kw>
+<kw name="Fill Confirmation Password" library="Register">
+<arguments>
+<arg>${UserData.Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${REGISTER_PASSWORD2_INPUT}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20161113 14:22:20.902" level="INFO">Typing text 'MyPassword!' into text field 'id=MainContent_ConfirmPassword'</msg>
+<status status="PASS" endtime="20161113 14:22:21.147" starttime="20161113 14:22:20.901"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:21.148" starttime="20161113 14:22:20.900"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20161113 14:22:26.149" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20161113 14:22:26.149" starttime="20161113 14:22:21.148"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:26.149" starttime="20161113 14:22:16.155"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:26.149" starttime="20161113 14:22:15.656"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161113 14:22:26.507" starttime="20161113 14:22:26.150"></status>
+</kw>
+<status status="PASS" endtime="20161113 14:22:26.507" starttime="20161113 14:22:26.150"></status>
+</kw>
+<tags>
+<tag>register</tag>
+</tags>
+<status status="PASS" endtime="20161113 14:22:26.507" critical="yes" starttime="20161113 14:22:02.720"></status>
+</test>
+<status status="PASS" endtime="20161113 14:22:26.511" starttime="20161113 14:21:47.638"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">landing</stat>
+<stat fail="0" pass="1">register</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="IMB Tests" pass="2">IMB Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
