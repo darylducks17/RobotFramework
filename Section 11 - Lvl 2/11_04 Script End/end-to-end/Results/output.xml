@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170906 21:43:57.000" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\end-to-end\tests\BackOffice\Back_Office.robot" id="s1" name="Back Office">
+<test id="s1-t1" name="Should be able to access &quot;Landing&quot; page">
+<kw type="setup" name="Begin Web Test" library="CommonWeb">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170906 21:43:57.108" level="INFO">Opening browser 'edge' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170906 21:43:58.195" starttime="20170906 21:43:57.107"></status>
+</kw>
+<status status="PASS" endtime="20170906 21:43:58.195" starttime="20170906 21:43:57.107"></status>
+</kw>
+<kw name="Go to Landing Page" library="BackOfficeApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20170906 21:43:58.198" level="INFO">Opening url 'http://www.robotframeworktutorial.com/back-office'</msg>
+<status status="PASS" endtime="20170906 21:44:11.820" starttime="20170906 21:43:58.198"></status>
+</kw>
+<status status="PASS" endtime="20170906 21:44:11.820" starttime="20170906 21:43:58.196"></status>
+</kw>
+<status status="PASS" endtime="20170906 21:44:11.820" starttime="20170906 21:43:58.196"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="CommonWeb">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170906 21:44:15.917" starttime="20170906 21:44:11.821"></status>
+</kw>
+<status status="PASS" endtime="20170906 21:44:15.918" starttime="20170906 21:44:11.821"></status>
+</kw>
+<doc>This is test 1</doc>
+<tags>
+<tag>test1</tag>
+</tags>
+<status status="PASS" endtime="20170906 21:44:15.918" critical="yes" starttime="20170906 21:43:57.106"></status>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" endtime="20170906 21:44:15.920" starttime="20170906 21:43:57.004"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">test1</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Back Office" pass="1">Back Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

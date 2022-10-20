@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170904 21:44:26.522" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\end-to-end\tests\FrontOffice\Front_Office.robot" id="s1" name="Front Office">
+<test id="s1-t1" name="Should be able to access &quot;Team&quot; page">
+<kw type="setup" name="Begin Web Test" library="CommonWeb">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:26.634" level="INFO">Opening browser 'edge' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170904 21:44:27.806" starttime="20170904 21:44:26.634"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:27.806" starttime="20170904 21:44:26.633"></status>
+</kw>
+<kw name="Go to Landing Page" library="FrontOfficeApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:27.809" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office'</msg>
+<status status="PASS" endtime="20170904 21:44:28.125" starttime="20170904 21:44:27.809"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:28.125" starttime="20170904 21:44:27.808"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Landing">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+</arguments>
+<status status="PASS" endtime="20170904 21:44:28.131" starttime="20170904 21:44:28.126"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:28.132" starttime="20170904 21:44:28.125"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:28.132" starttime="20170904 21:44:27.808"></status>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${TOP_NAV_TEAM_LINK}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:28.134" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" endtime="20170904 21:44:28.158" starttime="20170904 21:44:28.133"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170904 21:44:31.159" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170904 21:44:31.159" starttime="20170904 21:44:28.158"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:31.159" starttime="20170904 21:44:28.133"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Team">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TEAM_HEADER_LABEL}</arg>
+</arguments>
+<status status="PASS" endtime="20170904 21:44:31.163" starttime="20170904 21:44:31.159"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:31.163" starttime="20170904 21:44:31.159"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:31.163" starttime="20170904 21:44:28.132"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="CommonWeb">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170904 21:44:35.271" starttime="20170904 21:44:31.164"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:35.271" starttime="20170904 21:44:31.164"></status>
+</kw>
+<doc>This is test 1</doc>
+<tags>
+<tag>test1</tag>
+</tags>
+<status status="PASS" endtime="20170904 21:44:35.272" critical="yes" starttime="20170904 21:44:26.633"></status>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; page should match requirements">
+<kw type="setup" name="Begin Web Test" library="CommonWeb">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:35.274" level="INFO">Opening browser 'edge' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170904 21:44:36.369" starttime="20170904 21:44:35.274"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:36.370" starttime="20170904 21:44:35.274"></status>
+</kw>
+<kw name="Go to Landing Page" library="FrontOfficeApp">
+<kw name="Navigate To" library="Landing">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:36.374" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office'</msg>
+<status status="PASS" endtime="20170904 21:44:36.661" starttime="20170904 21:44:36.374"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:36.661" starttime="20170904 21:44:36.374"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Landing">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+</arguments>
+<status status="PASS" endtime="20170904 21:44:36.666" starttime="20170904 21:44:36.662"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:36.666" starttime="20170904 21:44:36.661"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:36.666" starttime="20170904 21:44:36.372"></status>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${TOP_NAV_TEAM_LINK}</arg>
+</arguments>
+<msg timestamp="20170904 21:44:36.668" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" endtime="20170904 21:44:36.690" starttime="20170904 21:44:36.667"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170904 21:44:39.691" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170904 21:44:39.691" starttime="20170904 21:44:36.691"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:39.691" starttime="20170904 21:44:36.667"></status>
+</kw>
+<kw name="Verify Page Loaded" library="Team">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TEAM_HEADER_LABEL}</arg>
+</arguments>
+<status status="PASS" endtime="20170904 21:44:39.695" starttime="20170904 21:44:39.691"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:39.695" starttime="20170904 21:44:39.691"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:39.695" starttime="20170904 21:44:36.667"></status>
+</kw>
+<kw name="Validate &quot;Team&quot; Page" library="FrontOfficeApp">
+<kw name="Validate Page Contents" library="Team">
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>${TEAM_HEADER_LABEL}</arg>
+</arguments>
+<assign>
+<var>${ElementText}</var>
+</assign>
+<msg timestamp="20170904 21:44:39.701" level="INFO">${ElementText} = Our Amazing Team</msg>
+<status status="PASS" endtime="20170904 21:44:39.701" starttime="20170904 21:44:39.696"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${ElementText}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case=true</arg>
+</arguments>
+<status status="PASS" endtime="20170904 21:44:39.702" starttime="20170904 21:44:39.702"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:39.702" starttime="20170904 21:44:39.696"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:39.702" starttime="20170904 21:44:39.695"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="CommonWeb">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170904 21:44:43.815" starttime="20170904 21:44:39.703"></status>
+</kw>
+<status status="PASS" endtime="20170904 21:44:43.815" starttime="20170904 21:44:39.703"></status>
+</kw>
+<doc>This is test 2</doc>
+<tags>
+<tag>test2</tag>
+</tags>
+<status status="PASS" endtime="20170904 21:44:43.816" critical="yes" starttime="20170904 21:44:35.273"></status>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" endtime="20170904 21:44:43.818" starttime="20170904 21:44:26.525"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">test1</stat>
+<stat fail="0" pass="1">test2</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Front Office" pass="2">Front Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
